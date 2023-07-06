@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: component-sample
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/sample-image@sha256:43326f83b9aa7db155508826315ba87043ab6087e17f36c860eda0076230b20c
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
